@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Template from './common/Template';
 
-import OrderContainer from './components/OrderContainer';
+import OrderContainer from './components/Order/OrderContainer';
 
 function App() {
   return (
