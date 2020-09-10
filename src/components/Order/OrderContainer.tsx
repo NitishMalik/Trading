@@ -2,17 +2,16 @@ import React from 'react';
 
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
 
-import './OrderContainer.css'
+import './OrderContainer.css';
 
 function OrderContainer() {
+  // const initialStockState = {
+  //   transactionType: 'buy',
+  //   price: 0,
+  //   quantity: 0,
+  // }
 
-  const initialStockState = {
-    transactionType: 'buy',
-    price: 0,
-    quantity: 0,
-  }
-
-  const [stockState, setStockState] = React.useState({ initialStockState });
+  //const [stockState, setStockState] = React.useState({ initialStockState });
 
   return (
     <Container className="order-screen">
@@ -22,7 +21,12 @@ function OrderContainer() {
             Stock Name
           </Form.Label>
           <Col sm="10">
-            <Form.Control className="bold" plaintext readOnly defaultValue="RIL" />
+            <Form.Control
+              className="bold"
+              plaintext
+              readOnly
+              defaultValue="RIL"
+            />
           </Col>
         </Form.Group>
 
@@ -49,25 +53,31 @@ function OrderContainer() {
             Transaction Type
           </Form.Label>
           <Col sm="2" className="no-padding--left">
-            <Form.Check inline label="1" label="Buy" type="radio" id="transaction-type--buy" />
-            <Form.Check inline label="2" label="Sell" type="radio" id="transaction-type--sell" />
+            <Form.Check
+              inline
+              label="Buy"
+              type="radio"
+              id="transaction-type--buy"
+            />
+            <Form.Check
+              inline
+              label="Sell"
+              type="radio"
+              id="transaction-type--sell"
+            />
           </Col>
         </Form.Group>
         <Form.Group as={Row}>
-          <Form.Label column sm="2">
-
-          </Form.Label>
+          <Form.Label column sm="2"></Form.Label>
           <Col sm="2" className="no-padding--left">
             <Button variant="primary" type="submit">
               Place Order
             </Button>
           </Col>
         </Form.Group>
-
-
       </Form>
     </Container>
-    )
+  );
 }
 
 export default OrderContainer;

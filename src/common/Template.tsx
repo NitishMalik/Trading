@@ -1,11 +1,14 @@
-import React, { ReactNode } from 'react';
+import React, {ReactNode} from 'react';
 
 import './template.css';
 
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import {Navbar, Nav, Container} from 'react-bootstrap';
 
+interface AppTemplatePropsI {
+  children: ReactNode;
+}
 
-export default function AppTemplate({ children }) {
+export default function AppTemplate({children}: AppTemplatePropsI) {
   return (
     <React.Fragment>
       <Header />
@@ -18,19 +21,15 @@ export default function AppTemplate({ children }) {
 function Header() {
   return (
     <Navbar collapseOnSelect={true} expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand>
-        Stock Trading
-      </Navbar.Brand>
+      <Navbar.Brand>Stock Trading</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="navbar-right">
-          
-        </Nav>
+        <Nav className="navbar-right"></Nav>
       </Navbar.Collapse>
     </Navbar>
   );
 }
 
 function Footer() {
-  return <footer>All rights Received</footer>
+  return <footer>All rights Received</footer>;
 }
