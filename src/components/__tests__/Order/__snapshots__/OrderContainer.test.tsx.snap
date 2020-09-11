@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests for Login component generates snapshot for Order component 1`] = `
+<div>
+  <div
+    class="order-screen container"
+  >
+    <form
+      class=""
+    >
+      <div
+        class="form-group row"
+      >
+        <label
+          class="form-label col-form-label col-sm-2"
+          for="stockName"
+        >
+          Stock Name
+        </label>
+        <div
+          class="col-sm-10"
+        >
+          <input
+            class="bold form-control-plaintext"
+            data-testid="stock-name-ele"
+            id="stockName"
+            readonly=""
+            value="Adani Green"
+          />
+        </div>
+      </div>
+      <div
+        class="form-group row"
+      >
+        <label
+          class="form-label col-form-label col-sm-2"
+          for="stockPrice"
+        >
+          Stock Price
+        </label>
+        <div
+          class="col-sm-5"
+        >
+          <input
+            class="form-control"
+            data-testid="stock-price-ele"
+            id="stockPrice"
+            placeholder="0.0"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="form-group row"
+      >
+        <label
+          class="form-label col-form-label col-sm-2"
+          for="formPlaintextPassword"
+        >
+          Quantity
+        </label>
+        <div
+          class="col-sm-5"
+        >
+          <input
+            class="form-control"
+            data-testid="quantity-ele"
+            id="formPlaintextPassword"
+            placeholder="0"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="form-group row"
+      >
+        <label
+          class="form-label col-form-label col-sm-2"
+          for="formPlaintextPassword"
+        >
+          Transaction Type
+        </label>
+        <div
+          class="no-padding--left col-sm-2"
+        >
+          <div
+            class="form-check form-check-inline"
+          >
+            <input
+              class="form-check-input"
+              data-testid="transaction-buy"
+              id="transaction-type--buy"
+              type="radio"
+            />
+            <label
+              class="form-check-label"
+              for="transaction-type--buy"
+              title=""
+            >
+              Buy
+            </label>
+          </div>
+          <div
+            class="form-check form-check-inline"
+          >
+            <input
+              class="form-check-input"
+              data-testid="transaction-sell"
+              id="transaction-type--sell"
+              type="radio"
+            />
+            <label
+              class="form-check-label"
+              for="transaction-type--sell"
+              title=""
+            >
+              Sell
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="form-group row"
+      >
+        <label
+          class="form-label col-form-label col-sm-2"
+        />
+        <div
+          class="no-padding--left col-sm-2"
+        >
+          <button
+            class="btn btn-primary"
+            data-testid="place-order-button"
+            type="submit"
+          >
+            Place Order
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

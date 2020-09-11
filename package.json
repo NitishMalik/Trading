@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:coverage": "set CI=true && react-scripts test --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,9 +39,21 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^26.0.13",
     "prettier": "^2.1.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.3.0",
     "tslint-react": "^5.0.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "**/**/*.{ts,tsx}",
+      "**/**/**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/serviceWorker.js",
+      "!**/index.js"
+    ]
   }
 }

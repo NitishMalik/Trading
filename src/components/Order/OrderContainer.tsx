@@ -25,7 +25,8 @@ function OrderContainer() {
               className="bold"
               plaintext
               readOnly
-              defaultValue="RIL"
+              defaultValue="Adani Green"
+              data-testid="stock-name-ele"
             />
           </Col>
         </Form.Group>
@@ -35,7 +36,11 @@ function OrderContainer() {
             Stock Price
           </Form.Label>
           <Col sm="5">
-            <Form.Control type="text" placeholder="0.0" />
+            <Form.Control
+              type="text"
+              placeholder="0.0"
+              data-testid="stock-price-ele"
+            />
           </Col>
         </Form.Group>
 
@@ -44,7 +49,11 @@ function OrderContainer() {
             Quantity
           </Form.Label>
           <Col sm="5">
-            <Form.Control type="text" placeholder="0" />
+            <Form.Control
+              type="text"
+              placeholder="0"
+              data-testid="quantity-ele"
+            />
           </Col>
         </Form.Group>
 
@@ -57,12 +66,14 @@ function OrderContainer() {
               inline
               label="Buy"
               type="radio"
+              data-testid="transaction-buy"
               id="transaction-type--buy"
             />
             <Form.Check
               inline
               label="Sell"
               type="radio"
+              data-testid="transaction-sell"
               id="transaction-type--sell"
             />
           </Col>
@@ -70,7 +81,10 @@ function OrderContainer() {
         <Form.Group as={Row}>
           <Form.Label column sm="2"></Form.Label>
           <Col sm="2" className="no-padding--left">
-            <Button variant="primary" type="submit">
+            <Button
+              data-testid="place-order-button"
+              variant="primary"
+              type="submit">
               Place Order
             </Button>
           </Col>
